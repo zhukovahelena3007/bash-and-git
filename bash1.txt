@@ -1,0 +1,25 @@
+  388  pwd
+  389  cd
+  390  mkdir test1
+  391  cd test1
+  392  touch file1.txt file2.txt file3.txt
+  393  ls -l
+  394  cd
+  395  mkdir test2
+  396  rm -r test2
+  397  rm test1/file2.txt
+  398  mkdir test3 && touch test3/file4.txt test3/file5.txt
+  399  rm -r test3
+  400  mkdir test4
+  401  mv test1/file1.txt test1/file3.txt test4/
+  402  cd test4
+  403  ls -l
+  404  cd
+  405  echo -e "line\nline\nline" >> file1.txt
+  406  cat file1.txt
+  407  echo -e "line\nline
+  408  echo -e "line\nline\nline" >> file3.txt
+  409  cat file1.txt file3.txt
+  410  nano file1.txt
+  411  history
+  412  history 25 > bash1.txt

@@ -1,0 +1,32 @@
+  492  ls
+  493  printf "row1\nrow2\nrow3\nrow4\n" | tee test3/{4,5,6} > /dev/null
+  494  printf "row1\nrow2\nrow3\nrow4\n" | tee 4 5 6 > /dev/null
+  495  grep "row2" 5
+  496  grep "row" test3
+  497  grep "row" *
+  498  grep -c "row" 6
+  499  find . -name "5"
+  500  find . -type f -name "5" -delete
+  501  echo "test" >> 4
+  502  sed -i 's/test/fail/g' 4
+  503  echo "test">> 4
+  504  cd
+  505  ps -ef
+  506  ps -W
+  507  sleep 500 &
+  508  kill 1290
+  509  ping rusau.net
+  510  ping -n 5 rusau.net
+  511  curl -X GET "https://swagger.io" -H "accept: application/json"
+  512  curl -X POST "https://swagger.io"   -H "accept: application/json"   -H "Content-Type: application/json"   -d '{
+    "id": 1001,
+    "username": "helena_qa",
+    "firstName": "Helena",
+    "lastName": "Zhu",
+    "email": "helena@example.com",
+    "password": "password123",
+    "phone": "+79991234567",
+    "userStatus": 1
+  }'
+  513  history
+  514  history | tail -n -32 > bash2.txt
